@@ -1,0 +1,17 @@
+.box {
+    margin-top: 15px;
+    margin-left: 50px;
+    border: 1px solid grey;
+    height: 30px;
+    width: 90%;
+    border-radius: 5px;
+}
+.uma{
+background: lightgrey;
+border-radius: 25px;
+float: right;
+margin-top: 3px;
+margin-right: 4px;
+padding-left: 8px;
+padding-right: 8px;
+}
