@@ -1,4 +1,5 @@
 import React from "react";
+import './style.css';
 
 const Todo = ({ todo, handleChange }) => {
     console.log(todo)
@@ -10,7 +11,7 @@ const Todo = ({ todo, handleChange }) => {
     return ( < div class = "box" >
         <input type = "checkbox" style = {{ margin: "7px 1px 0 9px" }}checked = { todo.done }onChange = {() => { handleChange(todo.id) }}/>
         <span style = { { padding: "0 2px" }} > { todo.title } </span>  
-    <span style = {{ margin: "0 0 0 1300px", background: "lightgrey", borderRadius: "25px",}} > {todo.done ? "completed" : "" } </span>
+    <span class="uma" > {todo.done ? "completed" : "" } </span>
     </div>
 )
 }
