@@ -13,8 +13,8 @@ const AddTodo =({addTodo})=>{
     return (<div>
         <form onSubmit={handleSubmit}>
             <h3>Todo</h3>
-            <input id="bar" type="text" value={title} onChange={(e)=>setTitle(e.target.value)} placeholder="Your Todo" required/>
-            <input id="ent" type="submit"/>
+            <input class="bar" type="text" value={title} onChange={(e)=>setTitle(e.target.value)} placeholder="Your Todo" required/>
+            <input class="ent" type="submit"/>
         </form>
     </div>)
 }

@@ -8,10 +8,10 @@ const TodoContainer = () => {
     { id: 1, title: "abc" },
     { id: 2, title: "xyz" },
   ]);
-  const [todos, setTodos]=useState(todoList)
+  
   const handleAddTodo=(newTodo)=>{
-    const newTodoList=[...todos,newTodo]
-    setTodos(newTodoList)
+    const newTodoList=[...todoList,newTodo]
+    setTodoList(newTodoList)
     console.log(newTodo);
     console.log(newTodoList);
   };
@@ -28,9 +28,11 @@ const TodoContainer = () => {
   return (
     <div>
       <h2 align="left"> Todo App </h2>{" "}
-      {todos.map((todo) => (
-        <Todo todo={todo} handleChange={handleCheckboxChange} />
+      {todoList.map((todo) => (
+        <Todo todo={todo} handleChange={handleCheckboxChange}/>
+        
       ))}
+
       <AddTodo addTodo={handleAddTodo}/>
     </div>
   );
