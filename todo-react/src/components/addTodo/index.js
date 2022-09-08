@@ -8,8 +8,7 @@ const AddTodo =({addTodo})=>{
         const newTodo={id:Math.random(), title:title}
         addTodo(newTodo)
         setTitle("")
-    }
-
+    }    
     return (<div>
         <form onSubmit={handleSubmit}>
             <h3>Todo</h3>
